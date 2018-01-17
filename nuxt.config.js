@@ -15,6 +15,10 @@ module.exports = {
     ]
   },
   /*
+  ** Modules
+  */
+  modules: ['@nuxtjs/sitemap'],
+  /*
   ** Customize the progress bar color
   */
   plugins: ['~plugins/vuetify.js'],
