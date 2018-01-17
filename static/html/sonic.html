@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🦔</title>
+    <meta name="description" content="Sonic">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="sonic" src="/models/sonic/Sonic.dae"></a-asset-item>
+      </a-assets>
+      <a-collada-model
+      src="#sonic"
+      position="0 1.2 -1.5"
+      rotation="90 0 0"></a-collada-model>
+      <a-sky color="#E3FFFE"></a-sky>
+    </a-scene>
+  </body>
+</html>

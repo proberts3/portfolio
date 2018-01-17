@@ -1,0 +1,111 @@
+<template>
+  <main>
+    <section>
+      <v-parallax src="/img/gpat.png" height="550">
+        <v-layout
+          column
+          align-center
+          justify-center
+          class="white--text"
+        >
+        <div class="overimage">
+          <v-container grid-list-xl>
+            <v-layout row wrap>
+              <v-flex class="margin-hero">
+                <div>
+                  <h1 class="white--text mb-2 display-1 text-xs-center">
+                  Georgia Project for Assitive Technology</h1>
+                  <p class="headline">
+                    Master's Capstone Project with the assistance and cooperation of the Georgia Department of Education, AMAC Accessibility, and CATEA.
+                  </p>
+                  <p class="headline">
+                    (In Progress)
+                  </p>
+                </div>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </div>
+        </v-layout>
+      </v-parallax>
+    </section>
+
+    <section>
+      <v-layout
+        column
+        wrap
+        class="my-5"
+        align-center
+      >
+        <v-flex xs11 sm10 md8 class="my-3 keywords">
+          <h3 class="prelist-header">Keywords: </h3>
+          <ul>
+            <li>
+              Univseral Design
+            </li>
+            <li>
+              Accessibility
+            </li>
+            <li>
+              Research
+            </li>
+            <li>
+              Participatory Design
+            </li>
+            <li>
+              Web Application
+            </li>
+          </ul>
+          <div class="text-xs">
+            <h2 class="space-top">Background</h2>
+            <p>
+              This project began when the Georgia Department of Education approached AMAC Accessibility (where I was a student worker at the time) needing to address problems with their current documents and process used to help students with disabilities. <a href="http://www.gpat.org/Georgia-Project-for-Assistive-Technology/Pages/default.aspx">Read more about the Georgia Project for Assitive Technology Here.</a>
+            </p>
+            <h2>Development</h2>
+            <p>
+              Using universal design principles
+            </p>
+          </div>
+        </v-flex>
+      </v-layout>
+    </section>
+  </main>
+</template>
+<script>
+export default {
+  head: {
+    title: 'GPAT 👩🏻‍🏫'
+  },
+  data () {
+    return {
+    }
+  }
+}
+</script>
+
+<style>
+.space-top {
+  margin: 1rem 0 0 0;
+}
+.prelist-header {
+  display: inline;
+}
+.keywords ul {
+  display: inline;
+}
+.keywords li {
+  display: inline-block;
+  margin: 0 0 0 1rem;
+}
+a {
+  color: #b4e9ff !important;
+}
+.headline {
+  text-align: center;
+}
+.overimage {
+  text-shadow: 1px 1px 2px black, 2px 2px 5px black;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 1.6em;
+}
+</style>
