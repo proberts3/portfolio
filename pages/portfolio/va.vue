@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div>
     <section>
       <v-layout
         column
@@ -8,10 +8,10 @@
         align-center
       >
         <v-flex xs11 sm10 md8 class="my-3">
-          <h1 class="white--text mb-2 display-1 text-xs-center">
-          VA Tactile Overlays for Interface</h1>
+          <h1 class=" mb-2 display-3 text-xs-center">
+            Tactile Overlays for Visual Impairment Research</h1>
           <p class="headline">
-            Project researching and developing and application to assist veterans who are visually impared with memory and cognition tasks.
+            Project researching and developing an application to assist veterans who are visually impaired with memory and cognition tasks.
           </p>
           <div class="keywords">
           <h3 class="prelist-header">Keywords: </h3>
@@ -27,26 +27,30 @@
               </li>
             </ul>
           </div>
-          <div class="text-xs">
-            <img src="/img/ipad.jpeg" align="right" width="50%">
+          <v-layout class="text-xs" row wrap justify-space-around>
+            <v-flex xs12 md7>
             <h2 class="space-top">About</h2>
             <p>
-              This ongoing project is part of collaboration and volunteering work with the Atlanta VA Medical Center. The team was given a task of developing an iPad application or tool that can assist veterans with visual impairments learn and reason about spatialization tasks. I assited in the design and prototyping for the primary researchers.
+              This ongoing project is a volunteer collaboration with the Atlanta VA Medical Center. The team was given a task of developing an iPad application or tool that can assist veterans with visual impairments learn and reason about spatialization tasks. I assited in the design and prototyping for the primary researchers.
             </p>
             <h2>Prototyping</h2>
             <p>
-              I created several protopes of a tactile overlay for the iPad and the initial software. Early-on we determined that the gross motor swipes and guestures that are commonly used for accessibly touch-screen interfaces would be insufficient for our grid-based spatialization challenge. We went through several iterations of designs and feedback from participants, protoyping many cuts, shapes, and lay-outs. The final design uses braille-like bumps to define a "landscape" for the navigation tasks and fine cut-outs for pointing/orientation tasks.
+              I created several prototypes of a tactile overlay for the iPad and the initial software. Early-on we determined that the gross motor swipes and gestures that are commonly used for accessible touch-screen interfaces would be insufficient for our grid-based spatialization challenge. We went through several iterations of designs and feedback from participants, prototyping  many cuts, shapes, and layouts. The final design uses braille-like bumps to define a "landscape" for the navigation tasks and fine cut-outs for pointing/orientation tasks.
             </p>
-          </div>
+            </v-flex>
+            <v-flex xs12 md5>
+              <video controls="controls" src="/img/ipad.mov" align="center" width="400px" name="VA Tactile Interface" />
+            </v-flex>
+          </v-layout>
         </v-flex>
       </v-layout>
     </section>
-  </main>
+  </div>
 </template>
 <script>
 export default {
   head: {
-    title: 'VA ✌️'
+    title: 'Tactile Overlays 👇'
   },
   data () {
     return {
@@ -55,7 +59,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+video {
+  display: block;
+  margin: 0 auto;
+}
 img {
   padding-left: 1.2rem;
 }

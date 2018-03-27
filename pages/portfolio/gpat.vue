@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div>
     <section>
       <v-parallax src="/img/gpat.png" height="550">
         <v-layout
@@ -14,9 +14,9 @@
               <v-flex class="margin-hero">
                 <div>
                   <h1 class="white--text mb-2 display-1 text-xs-center">
-                  Georgia Project for Assitive Technology</h1>
+                  Georgia Project for Assistive Technology</h1>
                   <p class="headline">
-                    Master's Capstone Project with the assistance and cooperation of the Georgia Department of Education, AMAC Accessibility, and CATEA.
+                    Master's Capstone Project with the Georgia Department of Education, AMAC Accessibility, and CATEA.
                   </p>
                   <p class="headline">
                     (In Progress)
@@ -59,17 +59,17 @@
           <div class="text-xs">
             <h2 class="space-top">Background</h2>
             <p>
-              This project began when the Georgia Department of Education approached AMAC Accessibility (where I was a student worker at the time) needing to address problems with their current documents and process used to help students with disabilities. <a href="http://www.gpat.org/Georgia-Project-for-Assistive-Technology/Pages/default.aspx">Read more about the Georgia Project for Assitive Technology Here.</a>
+              This project began when the Georgia Department of Education approached AMAC Accessibility needing to address problems with their current documents and process used to help students with disabilities. <a href="http://www.gpat.org/Georgia-Project-for-Assistive-Technology/Pages/default.aspx" target="_blank">Read more about the Georgia Project for Assistive Technology Here.</a>
             </p>
             <h2>Development</h2>
             <p>
-              Using universal design principles
+              I begun by consulting the stakeholders of the Georgia Department of Education,  from the state level, to the Atlanta Metro Consortium, and school districts. Using Universal Design Principles, we used the requirements and input from teachers and accessibility experts to design a process for student accesibility considerations. This uses the The International Classification of Functioning, Disability and Health (ICF model) which, to our knowledge, is one of the first programmatic applications of the ICF model. Currently we are testing our protoypes and gathering feedback from teachers.
             </p>
           </div>
         </v-flex>
       </v-layout>
     </section>
-  </main>
+  </div>
 </template>
 <script>
 export default {
@@ -83,7 +83,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .space-top {
   margin: 1rem 0 0 0;
 }
@@ -97,11 +97,11 @@ export default {
   display: inline-block;
   margin: 0 0 0 1rem;
 }
-a {
-  color: #b4e9ff !important;
-}
 .headline {
   text-align: center;
+}
+a {
+  color: rgb(12, 9, 117);
 }
 .overimage {
   text-shadow: 1px 1px 2px black, 2px 2px 5px black;

@@ -1,7 +1,7 @@
 {
   "name": "portfolio2",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "Phillip Isaac Roberts",
   "author": "Phillip <phil@proberts.us>",
   "private": true,
   "scripts": {
@@ -14,11 +14,13 @@
   },
   "dependencies": {
     "@nuxtjs/sitemap": "0.0.3",
-    "nuxt": "^1.1.1"
+    "jshint": "^2.9.5",
+    "nuxt": "^1.1.1",
+    "vue-smooth-scroll": "^1.0.13"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^4.3.0",
+    "eslint": "^4.16.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.1.1",

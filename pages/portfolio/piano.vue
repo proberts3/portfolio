@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div>
     <section>
       <v-parallax src="/img/ultrasonicpiano.jpg" height="550">
         <v-layout
@@ -53,7 +53,7 @@
           <div class="text-xs">
             <h2 class="space-top">About</h2>
             <p>
-              For our Discovery & Invention class at Georgia Tech, my team was tasked with finding an exisitng project and/or materials, and hacking together an improvment on the concept or prototopye. We chose <a href="http://www.instructables.com/id/Ultrasonic-Pi-Piano-With-Gesture-Controls/" target="blank">this project. <sup>(opens new window)</sup></a> I assited in all parts, but my primary role was designing and creating the physical form of the prototpye. We discovered by testing the defualt prototpye that there was a lot of "bleed" between the sensors, resulting in double notes. Our contribution, using a little trigonometry and a little more trial-and-error, was to arc the sensors so that they didn't overlap which had the bonus of making the instrument more ergonomic.
+              For our Discovery & Invention class at Georgia Tech, my team was tasked with finding an existing project and/or materials, and hacking together an improvment on the concept or prototype. We chose <a href="http://www.instructables.com/id/Ultrasonic-Pi-Piano-With-Gesture-Controls/" target="blank">this project. <sup>(opens new window)</sup></a> My primary role was designing and creating the physical form of the prototype and assisting in debugging the sensors. We discovered by testing the defualt prototype that there was a lot of "bleed" between the sensors, resulting in double notes. Our contribution, using a little trigonometry and a little more trial-and-error, was to arc the sensors so that they didn't overlap which also made the instrument more ergonomic.
             </p>
             <h2>Demo</h2>
             <div class="video-container">
@@ -78,12 +78,12 @@
         </v-flex>
       </v-layout>
     </section>
-  </main>
+  </div>
 </template>
 <script>
 export default {
   head: {
-    title: 'Arc Piano'
+    title: 'Arc Piano 🎹'
   },
   data () {
     return {
@@ -92,7 +92,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -127,7 +127,7 @@ height:auto;
   margin: 0 0 0 1rem;
 }
 a {
-  color: #b4e9ff !important;
+  color: #0a0073 !important;
 }
 .headline {
   text-align: center;

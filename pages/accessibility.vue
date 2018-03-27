@@ -4,8 +4,8 @@
     <h1>Accessibility</h1>
     <v-flex xs12 sm10 md10>
       <v-card>
-        <v-card-title class="headline blue-grey darken-3">
-          <v-icon class="white--text">accessible</v-icon>
+        <v-card-title class="headline blue lighten-4 black--text">
+          <v-icon>accessible</v-icon>
           <v-spacer />
           This Website
           <v-spacer />
@@ -15,8 +15,8 @@
         </v-card-text>
       </v-card>
       <v-card class="card2">
-        <v-card-title class="headline blue-grey lighten-2 black--text">
-          <v-icon class="black--text">perm_phone_msg</v-icon>
+        <v-card-title class="headline blue lighten-4 black--text">
+          <v-icon>perm_phone_msg</v-icon>
           <v-spacer />
           Consulting
           <v-spacer />
@@ -29,7 +29,7 @@
   </v-layout>
 </v-container>
 </template>
-<style>
+<style scoped>
 .card2 {
   margin-top: 0.8rem;
 }
@@ -37,7 +37,7 @@
 <script>
 export default {
   head: {
-    title: 'Accessibility 🤓'
+    title: 'Accessibility'
   }
 }
 </script>

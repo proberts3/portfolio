@@ -1,172 +1,165 @@
 <template>
-  <main>
-    <section>
-      <v-parallax src="/img/ultrasonicpiano.jpg" height="500">
-        <v-layout
-          column
-          align-center
-          justify-center
-          class="white--text"
-        >
-        <div class="overimage">
-          <v-container grid-list-xl>
-            <v-layout row wrap>
-              <v-flex class="margin-hero">
-                <div>
-                  <h1 class="white--text mb-2 display-1 text-xs-center">
-                  Phillip Isaac Roberts</h1>
-                  <p class="headline">UX <span aria-hidden="true">=></span> Design <span aria-hidden="true">=></span> Accessibility <span aria-hidden="true">=></span></p> <p class="headline">Build</p>
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </div>
-        </v-layout>
-      </v-parallax>
-    </section>
-
-    <section>
-      <v-layout
-        column
-        wrap
-        class="my-5"
-        align-center
-      >
-        <v-flex xs8 sm6 m4 class="my-3">
-          <div class="text-xs-center">
-            <p>
-            <img class="circle" src="/img/headshot.jpg" alt="Phillip Roberts headshot" width="200rem" height="auto" align="center"></p>
-            <p class="subheading">
-              UX Designer and Developer in Atlanta, Georgia. Currently UX/Marketing at Lucena Research and a graduate student at Georgia Institute of Technology, MS-HCI. Pursing full-time opportunities this May 2018.
-            </p>
+<div class="psuedo__main">
+  <v-content class="fill__container">
+    <v-container fill-height fluid style="padding:0">
+      <v-layout row justify-center align-center wrap>
+        <v-flex xs12>
+          <svg width="200px" height="260px" viewBox="0 0 200 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke-width="1" fill="none" fill-rule="evenodd"   backface-visibility="hidden">
+                <path
+                  d="M36.3333333,250 L36,98"
+                  id="path1"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                ></path>
+                <path
+                  d="M112.761348,38 C184.825712,48.8548783 178.607418,163 98.9591813,163 C20.0095707,163 15.1571029,50.5367111 85.2703036,38"
+                  id="path2" stroke-width="8" stroke-linecap="round"></path>
+                <path
+                  d="M100,75 C100,25.6666667 100,1 100,1"
+                  id="path3"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                ></path>
+                <path
+                  d="M190,216 L145,145"
+                  id="path4"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                ></path>
+            </g>
+          </svg>
+        </v-flex>
+        <v-flex xs12 class="fadein">
+          <div class="textbox">
+            <div class="innerbox">
+            <h1>Phillip Isaac Roberts</h1>
+            <p>User Insights, Design, Accessibility</p>
+            <v-btn class="blue darken-4 white--text main-nav elevation-1" exact round router href="/portfolio">Enter</v-btn>
+            </div>
           </div>
         </v-flex>
-        <v-container fluid grid-list-md>
-          <v-layout row wrap>
-            <v-flex
-              v-bind="{ [`sm${card.flex}`]: true }"
-              v-for="card in cards"
-              :key="card.title"
-            >
-              <v-card>
-                <v-card-media
-                  :src="card.src"
-                  height="200px"
-                >
-                  <v-container fill-height fluid>
-                    <v-layout fill-height>
-                      <v-flex xs12 align-end flexbox>
-                        <h3 class="headline white--text" v-text="card.title"></h3>
-                        <p v-text="card.content" class="text-xs-center"></p>
-                      </v-flex>
-                    </v-layout>
-                  </v-container>
-                </v-card-media>
-                <v-card-actions>
-                  <v-spacer></v-spacer>
-                  <v-btn color="blue-grey lighten-4 black--text" :to="card.link">
-                    Read More<span class="screen-reader">&nbsp; about {{card.title}}</span>
-                  </v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-flex>
-          </v-layout>
-        </v-container>
-        </v-flex>
-      </v-layout>
-    </section>
-
-    <section>
-      <v-container grid-list-xl>
-        <v-layout row wrap justify-center class="my-5">
-          <v-flex xs12 sm4>
-            <v-card class="elevation-0 transparent">
-              <v-card-title primary-title class="layout justify-center">
-                <h2 class="headline">Info</h2>
-              </v-card-title>
-              <v-card-text>
-asdf
-              </v-card-text>
-            </v-card>
-          </v-flex>
-          <v-flex xs12 sm4 offset-sm1>
-            <v-card class="elevation-0 transparent">
-              <v-card-title primary-title class="layout justify-center">
-                <h2 class="headline">Contact</h2>
-              </v-card-title>
-              <v-card-text>
-                Please feel free to leave a short message about anything with your contact info. I will not respond to unkown phone calls if you do not leave a message.
-              </v-card-text>
-              <v-list class="transparent">
-                <v-list-tile>
-                  <v-list-tile-action>
-                    <v-icon class="blue--text text--lighten-2">phone</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title>404-538-5064</v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-                <v-list-tile>
-                  <v-list-tile-action>
-                    <v-icon class="blue--text text--lighten-2">work</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title>Lucena Research, Atlanta, GA</v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-                <v-list-tile>
-                  <v-list-tile-action>
-                    <v-icon class="blue--text text--lighten-2">email</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title>phil@proberts.us</v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </v-list>
-            </v-card>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </section>
-  </main>
+    </v-layout>
+  </v-container>
+  </v-content>
+</div>
 </template>
 <script>
 export default {
+  layout: 'splash',
   head: {
-    title: 'Phillip Roberts 👨‍💻'
-  },
-  data () {
-    return {
-      cards: [
-        { title: 'GPAT', content: 'Project with the Georgia Department of Education improving and developing tools for teachers to manage and assist students with disabilities.', src: '/img/gpat.png', link: '/portfolio/gpat', flex: 4 },
-        { title: 'Virtual Reality', content: 'Game Design and Interactive Media', src: '/static/doc-images/cards/road.jpg', link: '/vr', flex: 4 },
-        { title: 'VA Tactile Interface', content: 'Reserch and development of tasks to improve the memory and function of veterans with visual impairment.', src: '/img/ipad.jpeg', link: '/portfolio/va', flex: 4 },
-        { title: 'SWAN', content: 'Researching, Designing, and developing a system for wearable audio navigation.', src: '/img/vincent.jpg', link: '/portfolio/swan', flex: 4 },
-        { title: 'Ultrasonic Arc Piano', content: 'Gesture based musical instrument.', link: '/portfolio/piano', src: '/img/ultrasonicpiano.jpg', flex: 4 },
-        { title: 'Potluck', content: 'UX design/research for students trying new foods and resturants', src: '/img/potluck.png', flex: 4 }
-      ]
-    }
+    title: 'Phillip Isaac Roberts'
   }
 }
 </script>
 
-<style>
-.margin-hero {
-  margin: 0 auto;
+<style scoped>
+.fill__container {
+  height: 85vh;
 }
-.circle {
-  border-radius: 50%;
+.psuedo__main {
+  height: 100%;
 }
-.headline {
+.fadein {
+  animation: fadein 3s ease 5s forwards;
+  opacity: 0;
+}
+@keyframes fadein {
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 100;
+  }
+}
+.textbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1 1 auto;
   text-align: center;
 }
-.overimage {
-  text-shadow: 1px 1px 2px black, 2px 2px 5px black;
-  background-color: rgba(0, 0, 0, 0.55);
-  padding: 1.6em;
+.innerbox {
+  flex-basis: 30%;
+  padding: 24px;
+  border-radius: 14px;
+  background-color: rgba(193, 229, 255, 0.9);
 }
-.card__media__content {
-  background-color: rgba(0,0,0, 0.5);
-  text-shadow: 1px 1px 2px black, 2px 2px 5px black;
+#path1 {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: dash 1s ease-in forwards;
+  animation-delay: 0.7s;
+  stroke: #1976D2;
+  box-shadow: 1px 2px 3px #fff;
+  backface-visibility: hidden;
+}
+@keyframes dash  {
+  from {
+    stroke-dashoffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#path2 {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: dash 2s ease-in forwards;
+  animation-delay: 1.2s;
+  stroke: #1976D2;
+  backface-visibility: hidden;
+}
+#path3 {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: dash 2s ease-in forwards;
+  animation-delay: 2.8s;
+  stroke: #1976D2;
+  backface-visibility: hidden;
+}
+#path4 {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: dash 2s ease-in forwards;
+  animation-delay: 3.3s;
+  stroke: #1976D2;
+  backface-visibility: hidden;
+}
+.blue {
+  border-bottom: 2px solid #083281 !important;
+}
+.blue:focus {
+  outline: 1px dotted #000;
+}
+
+.blue::before {
+  content: " " !important;
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  bottom: 0px !important;
+  border-radius: 24px;
+  border-bottom: 1px solid rgb(23, 104, 190) !important;
+}
+svg {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+a {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: azure;
+  padding: 12px 64px 12px 64px;
+  font-size: 1.1em;
+}
+.center {
+  display: block;
+  text-align: center;
+}
+.center {
+  text-align: center;
 }
 </style>
