@@ -1,8 +1,10 @@
 # Portfolio
 
-My Portfolio
+Old Portfolio
 
-Created with Vuejs, Nuxt, & Vuetify and deployed on AWS. \n
-[Webiste](http://proberts.us) \n
-See performance insights: \n
-[Google Pagespeed](https://developers.google.com/speed/pagespeed/insights/?url=www.proberts.us&tab=desktop)
+Created with Vuejs, Nuxt, & Vuetify and deployed on AWS.
+
+Left as an example of using Vue.js work with state management and static site generators.
+
+Currently I have migrated to using Hugo and Gitlab to dynamically generate and deploy my personal site and projects.
+![Webiste](http://proberts.us)
